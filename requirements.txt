@@ -1,0 +1,21 @@
+'''
+************************************************************************
+*************** Author:   Christian KEMGANG NGUESSOP *******************
+*************** Project:   shophair                  *******************
+*************** Version:  1.0.0                      *******************
+************************************************************************
+'''
+
+asgiref==3.8.1
+Django==4.1.13
+django-cors-headers==4.5.0
+djangorestframework==3.15.1
+djangorestframework-simplejwt==5.3.1
+djongo==1.3.6
+dnspython==2.7.0
+PyJWT==2.9.0
+pymongo==4.10.1
+python-dotenv==1.0.1
+pytz==2024.2
+sqlparse==0.2.4
+typing_extensions==4.12.2
