@@ -5,7 +5,9 @@
 #***********************************************************************/
 
 # Environments
+.vscode
 .DS_Store
+.venv
 
 # Folders
 /backend

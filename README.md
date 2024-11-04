@@ -2,13 +2,27 @@
 
 ## `BACKEND`
 ### In the project directory, run this command to initialize the project and install dependencies:
-- `python3 -m venv shophair_env`
-- `source shophair_env/bin/activate`
+- `python3 -m venv venv`
+- `source venv/bin/activate`
 - `python3 -m pip install --upgrade pip`
 - `pip install -r requirements.txt`  (If the file requirement exists)
-- `pip install djangorestframework djangorestframework-simplejwt django-cors-headers python-dotenv pymongo django djongo==1.3.6 pytz`
+- `pip install djangorestframework djangorestframework-simplejwt django-cors-headers python-dotenv django psycopg2 pyotp google-api-python-client`
 - `pip freeze > requirements.txt` 
 - `rasa init`
+
+### Environment DB PostgreSQL:
+- `brew update`
+- `brew install postgresql`
+- `psql --version`
+- `psql postgres`
+- `brew services list`
+- `brew services start postgresql`
+- `psql -U user_admin -d shophair_db_test`
+
+### Environment to get the default domain to expose the application online for a test:
+- `brew install ngrok/ngrok/ngrok`
+- `ngrok config add-authtoken YOUR_AUTH_TOKEN`
+- `ngrok http http://localhost:8080`
 
 ### Command to run the project:
 - Rasa chatbot  `rasa run`  `rasa run actions`  `rasa run --enable-api`
